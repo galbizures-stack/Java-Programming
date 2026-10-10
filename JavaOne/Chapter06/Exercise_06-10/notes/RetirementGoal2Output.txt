@@ -1,0 +1,13 @@
+Script started on 2026-09-22 10:02:01+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="201" LINES="15"]
+[?2004h[0;32m@galbizures-stack [0m➜ [1;34m.../9780357673423_java-programming-10e-fb255dec-00a3-445b-9259-b80c8132cd69/chapter6/ex10/student [0;36m([1;31mtemplate[0;36m) [0m$ java RetirementGoal2
+[?2004l
+How many years until retirement? >> 10
+How much can you save annually? >> 8000
+If you save $8000 for 10 years, you will have $80000.0
+If you save $8000 for 10 years with 4% interest, you will have $99890.81126301555
+
+[?2004h[0;32m@galbizures-stack [1;31m➜ [1;34m.../9780357673423_java-programming-10e-fb255dec-00a3-445b-9259-b80c8132cd69/chapter6/ex10/student [0;36m([1;31mtemplate[0;36m) [0m$ exit
+[?2004l
+exit
+
+Script done on 2026-09-22 10:02:26+00:00 [COMMAND_EXIT_CODE="127"]

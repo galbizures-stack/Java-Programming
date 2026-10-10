@@ -1,0 +1,34 @@
+import java.util.*;
+public class RetirementGoal {
+    public static void main(String[] args) {
+        int yearsToRetirement;
+        int savingsPerYr;
+        double total;
+        
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("How many years until retirement? >> ");
+        yearsToRetirement = input.nextInt();
+
+        while (yearsToRetirement < 1) {
+            System.out.print("How many years until retirement? >> ");
+            yearsToRetirement = input.nextInt();
+        }
+
+        System.out.print("How much can you save annually? >> ");
+        savingsPerYr = input.nextInt();
+
+        while (savingsPerYr < 1) {
+            System.out.print("How much can you save annually? >> ");
+            savingsPerYr = input.nextInt();
+            
+        }
+
+        total = yearsToRetirement * savingsPerYr;
+
+        System.out.println("If you save $"+savingsPerYr+ " for "+ yearsToRetirement+ " years without interest, you will have $"+total);
+
+        input.close();
+    }
+}
