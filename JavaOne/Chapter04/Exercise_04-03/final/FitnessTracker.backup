@@ -1,0 +1,53 @@
+public class FitnessTracker {
+    private int numberOfMinutes;
+    private String nameOfActivity;
+    private String date;
+
+    public FitnessTracker(){
+        this.nameOfActivity="running";
+        this.numberOfMinutes=0;
+        this.date="2026-01-01";
+    }
+
+    public FitnessTracker(String activityName){
+        this.nameOfActivity=activityName;
+        this.numberOfMinutes=0;
+        this.date="2026-01-01";
+    }
+    public FitnessTracker(String activityName, String setDate){
+        this.nameOfActivity=activityName;
+        this.numberOfMinutes=0;
+        this.date=setDate;
+    }
+
+    public FitnessTracker(String activityName, String setDate, int minuteInput){
+        this.nameOfActivity=activityName;
+        this.date=setDate;
+        this.numberOfMinutes = minuteInput;
+    }
+
+    public String getActivity(){
+        return this.nameOfActivity;
+    }
+    public String getDate(){
+        return this.date;
+    }
+    public int getActivityMinutes(){
+        return this.numberOfMinutes;
+    }
+
+    public void setActivity(String activityName){
+        this.nameOfActivity=activityName;
+    }
+
+    public void setDate(String newDate){
+        this.date=newDate;
+    }
+    
+    public void setActivityMinutes(int minuteInput){
+        this.numberOfMinutes=minuteInput;
+    }
+    public static void main(String[] args) {
+        
+    }
+}
