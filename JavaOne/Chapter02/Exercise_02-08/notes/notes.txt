@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class ChiliToGoProfit {
+    public static double ADULT_MEAL_PRICE = 7.0;
+    public static double KID_MEAL_PRICE = 4.0;
+
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        int adultMeals;
+        int kidMeals;
+        
+        System.out.print("Enter number of adult meals ordered >> ");
+        adultMeals = input.nextInt();
+        System.out.print("Enter number of child meals ordered >> ");
+        kidMeals = input.nextInt();
+        System.out.printf(adultMeals+" adult meals were ordered at $"+ADULT_MEAL_PRICE+" each.\n");
+        System.out.print("\tTotal is $"+ADULT_MEAL_PRICE*adultMeals+"\n");
+        System.out.print(kidMeals+" child meals were ordered at $"+KID_MEAL_PRICE+" each.\n");
+        System.out.print("\tTotal is $"+KID_MEAL_PRICE*kidMeals);
+        System.out.print("\nGrand total for all meals is $"+(KID_MEAL_PRICE*kidMeals+ADULT_MEAL_PRICE*adultMeals)+"\n");
+
+        input.close();
+    }
+}
