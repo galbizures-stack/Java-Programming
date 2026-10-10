@@ -1,0 +1,45 @@
+import java.util.*;
+public class PaintCalculator {
+    public static final double PRICE_PER_AREA=64;
+    public static final int STANDARD_ROOM_AREA=700;
+    //public static final double DOLLARS_PER_AREA = STANDARD_ROOM_PAINT/STANDARD_ROOM_PAINT;
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter the room's length >> ");
+        double length = input.nextDouble();
+        
+        System.out.print("Enter the room's width >> ");
+        double width = input.nextDouble();
+
+        System.out.print("Enter the room's height >> ");
+        double height = input.nextDouble();
+
+
+
+
+        double roomArea = computeArea(length, width, height);
+        double gallonsNeed = computeGallons(roomArea);
+
+        System.out.println("You will need "+ gallonsNeed
+        +" gallons");
+        double finalPrice = computeArea(gallonsNeed);
+        System.out.println("The price to paint the room is $"
+        + finalPrice);
+
+        input.close();
+        
+    }
+    public static double computeGallons(double roomArea){
+        double price = roomArea/700*64;
+        return price/32;
+    }
+
+    public static double computeArea(double length, double width, double height){
+        return (2*length*height+2*width*height);
+    }
+    public static double computeArea(double gallonsUsed){
+        return gallonsUsed*32;
+    }
+}
